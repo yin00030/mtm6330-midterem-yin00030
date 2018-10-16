@@ -1,0 +1,479 @@
+/*font*/
+
+@import url('https://fonts.googleapis.com/css?family=Mr+Dafoe');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Adamina');
+
+/*css*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    text-align: center;
+    background-image: url("/img/bg.jpg");
+}
+
+li,
+p,
+legend,
+lable,
+textarea {
+    color: #3f3f3f;
+}
+
+
+/*index*/
+
+
+/*masthead*/
+
+.masterhead {
+    height: 150px;
+    background-image: url("/img/masthead.jpg");
+}
+
+.masterhead a {
+    text-decoration: none;
+}
+
+h1 {
+    padding: 2rem 0 0 0;
+    text-align: center;
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 2.1rem;
+    color: #ef85a3;
+}
+
+#search {
+    width: 200px;
+    padding: 7px;
+    border: 1px solid black;
+}
+
+#submit {
+    padding: 7px;
+    background: #ef85a3;
+    border-radius: 4%;
+}
+
+.searchbar {
+    margin: 0.5rem auto;
+}
+
+
+/*menu*/
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a:link {
+    text-decoration: none;
+    color: #ef85a3;
+    display: inline-block;
+    width: 80%;
+    margin: 0 0 0.5rem 0;
+    padding: 0.3rem;
+    border: 1px dotted #f09cb4;
+    font-family: 'Questrial', sans-serif;
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: #f09cb4;
+}
+
+nav ul li a:active {
+    background-color: antiquewhite;
+    color: #ccc;
+}
+
+
+/*figure section*/
+
+main {
+    margin: 1rem;
+}
+
+.main-content-bg {
+    padding: 2.5rem;
+    background-color: #ffd6e2;
+}
+
+.content-box {
+    text-align: center;
+}
+
+main ul img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4%;
+}
+
+main ul img:hover {
+    box-shadow: 5px 1px 8px 1px #f09cb4;
+}
+
+.name {
+    margin-bottom: 1rem;
+}
+
+.name li {
+    font-family: 'Nunito', sans-serif;
+}
+
+a[href="#top"] {
+    padding: 1.3rem 0 1.2rem;
+    text-decoration: none;
+    color: deeppink;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    background-image: url("/img/icon.png");
+}
+
+.footer-content {
+    height: 150px;
+    margin-top: 3rem;
+    background-image: url("/img/masthead.jpg");
+}
+
+h2 {
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 2rem;
+    color: #ef85a3;
+    padding-top: 2rem;
+}
+
+.footer-content p {
+    margin: 0.5rem 0 0.5rem 0;
+    color: grey;
+    font-family: 'Adamina', serif;
+    font-size: 0.6rem;
+}
+
+.footer-content span {
+    color: #4c4c4c;
+}
+
+#sub-nav {
+    margin-top: 5rem;
+    margin-bottom: 5.5rem;
+}
+
+#sub-nav ul {
+    width: 100%;
+}
+
+#sub-nav ul li {
+    display: inline;
+}
+
+#sub-nav ul li a {
+    width: auto;
+    background: none;
+    border: none;
+    padding: 0 2rem;
+    border-right: 2px solid red;
+    text-align: center;
+    margin-right: 0;
+}
+
+#sub-nav ul li:last-child a {
+    border: none;
+}
+
+#sub-nav ul li a:hover {
+    color: blueviolet;
+    font-size: 1.1rem;
+}
+
+/*index*/
+
+
+/*about*/
+
+.tablet_sale {
+    display: none;
+}
+
+.main-content-photo {
+    width: 100%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    border-radius: 4%;
+}
+
+.main-content-photo p,
+.main-content-table tr,
+.main-content-table td {
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+    color: #3f3f3f;
+}
+
+.main-content-table td {
+    text-align: center;
+}
+
+.main-content-photo img {
+    margin: 0 0 2rem 0;
+    box-shadow: 5px 1px 8px 1px #f09cb4;
+}
+
+.main-content-table img {
+    box-shadow: 5px 1px 8px 1px #f09cb4;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: sans-serif;
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+}
+
+th {
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    padding: 1rem;
+    text-align: center;
+}
+
+td {
+    border: 1px dotted #4cba6d;
+    padding: 0.7rem;
+    text-align: center;
+}
+
+
+/*form*/
+
+fieldset {
+    border: none;
+}
+
+form {
+    padding: 1rem;
+    border: 1px dotted #4cba6d;
+}
+
+.form-box {
+    padding: 0 0 1rem 0;
+}
+
+.form-box:nth-child(5) lable {
+    display: inline-block;
+}
+
+lable {
+    display: block;
+    margin: 0 0 0.5rem 0;
+    font-family: 'Adamina', serif;
+    font-size: 0.8rem;
+}
+
+lable:first-child {
+    margin-top: 0.5rem;
+}
+
+legend {
+    font-family: 'Questrial', sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: azure;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+    background-image: url("/img/bg.jpg")
+}
+
+input[type="submit"] {
+    padding: .5rem;
+    border: 1px dotted #4cba6d;
+    border-radius: 4%;
+    background-color: #ef85a3;
+    color: aliceblue;
+}
+
+
+/*map*/
+
+.map-wrapper {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.map-wrapper p {
+    font-family: 'Questrial', sans-serif;
+    color: #3f3f3f;
+}
+
+.map-wrapper span {
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 1.1rem;
+    color: #ef85a3;
+}
+
+
+/*STYLE adustment FOR TEMPLATES*/
+
+@media all and (min-width: 768px) {
+    
+    /*index*/
+    h1 {
+        padding: 2.1rem 0 0 4rem;
+        text-align: left;
+        display: inline;
+        font-size: 3rem;
+    }
+    .searchbar {
+        padding: 3rem 4rem 0 0;
+    }
+    nav {
+        margin: 0 4rem 0 4rem;
+    }
+    nav ul li a:link {
+        text-decoration: none;
+        color: #444;
+        display: inline-block;
+        padding: 0.5rem;
+        background-color: #f09cb4;
+        width: calc(33.33% - 1rem);
+        margin: 0 1rem 0 0;
+        border-radius: 4%;
+        font-family: 'Nunito', sans-serif;
+    }
+    nav ul li:last-child a:link {
+        margin: 0;
+    }
+    main {
+        margin: 4rem;
+    }
+    .main-content-bg {
+        padding: 5.5rem;
+    }
+    main ul {
+        margin: 0;
+    }
+    main ul::after {
+        content: "";
+        display: block;
+        clear: left;
+    }
+    main ul li {
+        width: calc(33.33% - 1rem + 0.33rem);
+        float: left;
+        margin: 0 1rem 1rem 0;
+    }
+    main ul li:nth-child(3n) {
+        margin: 0 0 1rem 0;
+    }
+    figcaption ul li {
+        width: 100%;
+        float: none;
+    }
+    figure img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    figure p {
+        background: black;
+        text-align: center;
+        color: aliceblue;
+    }
+    h1 {
+        float: left;
+    }
+    .searchbar {
+        float: right;
+        padding: 3rem 4rem;
+    }
+    #sub-nav ul li a {
+        float: left;
+    }
+    a[href="#top"] {
+        float: right;
+        margin-right: 4rem;
+    }
+    
+    /*    about*/
+    img {
+        width: 40%;
+        float: left;
+    }
+    .main-content-photo {
+        width: 46%;
+        float: left;
+        margin-right: 8%;
+    }
+    .main-content-photo img {
+        margin: 0 1.7rem 0 0;
+    }
+    .main-content-table {
+        width: 46%;
+        float: left;
+    }
+    .mobile_sale {
+        display: none;
+    }
+    .tablet_sale {
+        display: block;
+        width: 250%;
+    }
+    
+    /*    contact*/
+    form {
+        width: 46%;
+        margin-right: 8%;
+        float: left;
+    }
+    .map-wrapper {
+        width: 46%;
+        float: left;
+    }
+    .map-wrapper iframe {
+        width: 100%;
+        float: left;
+    }
+    .map-wrapper {
+        margin-top: 0rem;
+    }
+    table {
+        margin: 0 0 6rem 0;
+    }
+}
