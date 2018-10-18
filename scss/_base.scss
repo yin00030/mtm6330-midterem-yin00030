@@ -1,0 +1,40 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css?family=Mr+Dafoe');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Adamina');
+$logo-font:'Mr Dafoe',cursive;
+$link-font:'Questrial',sans-serif;
+$figure-section-font:'Nunito',sans-serif;
+
+/* Global Sass variables */
+$text-color:#3f3f3f;
+$logo-color: #ef85a3;
+$border-color: black;
+$link-color:#f09cb4;
+$link-hover-color:white;
+$link-active-font-color:#ccc;
+$link-active-background-color:antiquewhite;
+$main-content-bg-color:#ffd6e2;
+
+
+/*scss*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    text-align: center;
+    background-image: url("/img/bg.jpg");
+}
+
+li, p, legend, lable, textarea {
+    color: $text-color;
+}
