@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Mr+Dafoe");
 @import url("https://fonts.googleapis.com/css?family=Nunito");
 @import url("https://fonts.googleapis.com/css?family=Adamina");
+/* Global Sass variables */
 /*scss*/
 * {
   box-sizing: border-box;
@@ -27,6 +28,7 @@ li, p, legend, lable, textarea {
 /*index page*/
 /*masthead*/
 .masterhead {
+  /* Class scoped Sass variable */
   height: 150px;
   background-image: url("/img/masthead.jpg");
 }
