@@ -2,62 +2,8 @@
 @import 'normalize';
 @import 'base';
 
-/*font*/
-@import url('https://fonts.googleapis.com/css?family=Mr+Dafoe');
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-@import url('https://fonts.googleapis.com/css?family=Adamina');
-$logo-font:'Mr Dafoe',cursive;
-$link-font:'Questrial',sans-serif;
-$figure-section-font:'Nunito',sans-serif;
-
-/* Global Sass variables */
-$text-color:#3f3f3f;
-$logo-color: #ef85a3;
-$border-color: black;
-$link-color:#f09cb4;
-$link-hover-color:white;
-$link-active-font-color:#ccc;
-$link-active-background-color:antiquewhite;
-$main-content-bg-color:#ffd6e2;
 
 /*index page*/
-
-/*masthead*/
-.masterhead {
-    /* Class scoped Sass variable */
-    $height: 150px;
-
-    height: $height;
-    background-image: url("/img/masthead.jpg");
-
-    a {
-        text-decoration: none;
-    }
-}
-h1 {
-    padding: 2rem 0 0 0;
-    text-align: center;
-    font-family: $logo-font;
-    font-size: 2.1rem;
-    color: $logo-color;
-}
-
-#search {
-    width: 200px;
-    padding: 7px;
-    border: 1px solid $border-color;
-}
-
-#submit {
-    padding: 7px;
-    background: $logo-color;
-    border-radius: 4%;
-}
-
-.searchbar {
-    margin: 0.5rem auto;
-}
-
 /*menu*/
 nav ul {
     list-style: none;
@@ -92,11 +38,50 @@ nav ul {
     }
 }
 
+
+/*masthead*/
+.masterhead {
+    /* Class scoped Sass variable */
+    $height: 150px;
+
+    height: $height;
+    background-image: url("../img/masthead.jpg");
+
+    a {
+        text-decoration: none;
+    }
+}
+h1 {
+    padding: 2rem 0 0 0;
+    text-align: center;
+    font-family: $logo-font;
+    font-size: 2.1rem;
+    color: $logo-color;
+}
+
+#search {
+    width: 200px;
+    padding: 7px;
+    border: 1px solid $border-color;
+}
+
+#submit {
+    padding: 7px;
+    background: $logo-color;
+    border-radius: 4%;
+}
+
+.searchbar {
+    margin: 0.5rem auto;
+}
+
+
 /*figure section*/
 main {
     margin: 1rem;
-
-    ul img {
+ ul{
+     list-style: none;
+     img {
         width: 100%;
         height: auto;
         display: block;
@@ -106,6 +91,7 @@ main {
             box-shadow: 5px 1px 8px 1px $link-color;
         }
     }
+  } 
 }
 .main-content-bg {
     padding: 2.5rem;
@@ -124,25 +110,25 @@ main {
 a[href="#top"] {
     padding: 1.3rem 0 1.2rem;
     text-decoration: none;
-    color: deeppink;
+    color:$a-top-color;
     font-size: 1rem;
     font-family: $figure-section-font;
-    background-image: url("/img/icon.png");
+    background-image: url("../img/icon.png");
 }
 .footer-content {
     height: 150px;
     margin-top: 3rem;
-    background-image: url("/img/masthead.jpg");
+    background-image: url("../img/masthead.jpg");
 
     p {
         margin: 0.5rem 0 0.5rem 0;
-        color: grey;
-        font-family: 'Adamina',serif;
+        color:$p-color;
+        font-family: $label-font;
         font-size: 0.6rem;
     }
 
     span {
-        color: #4c4c4c;
+        color:$span-color;
     }
 }
 h2 {
@@ -169,11 +155,11 @@ h2 {
                 background: none;
                 border: none;
                 padding: 0 2rem;
-                border-right: 2px solid red;
+                border-right: 2px solid $a-top-color;
                 text-align: center;
                 margin-right: 0;
                 &:hover {
-                    color: blueviolet;
+                    color:$a-hover-color;
                     font-size: 1.1rem;
                 }
             }
@@ -201,7 +187,7 @@ img {
 .main-content-photo p, .main-content-table tr, .main-content-table td {
     text-align: justify;
     font-family: $figure-section-font;
-    color: #3f3f3f;
+    color:$p-color;
 }
 
 .main-content-table {
@@ -228,14 +214,14 @@ table {
 }
 
 th {
-    border: 1px solid #ddd;
-    background-color: #f5f5f5;
+    border: 1px solid $th-border-color;
+    background-color: $th-background-color;
     padding: 1rem;
     text-align: center;
 }
 
 td {
-    border: 1px dotted #4cba6d;
+    border: 1px dotted $td-border-color;
     padding: 0.7rem;
     text-align: center;
 }
@@ -247,7 +233,7 @@ fieldset {
 
 form {
     padding: 1rem;
-    border: 1px dotted #4cba6d;
+    border: 1px dotted $td-border-color;
 }
 
 .form-box {
@@ -261,7 +247,7 @@ form {
 lable {
     display: block;
     margin: 0 0 0.5rem 0;
-    font-family: 'Adamina',serif;
+    font-family: $label-font;
     font-size: 0.8rem;
 
     &:first-child {
@@ -277,9 +263,9 @@ input[type="text"], input[type="email"], textarea {
     display: inline-block;
     width: 100%;
     padding: 0.5rem;
-    border: 1px solid #ddd;
+    border: 1px solid $th-border-color;
     border-radius: 3px;
-    background-color: azure;
+    background-color: $input-background-color;
 
     &:hover {
         background-image: url("../img/bg.jpg");
@@ -288,10 +274,10 @@ input[type="text"], input[type="email"], textarea {
 
 input[type="submit"] {
     padding: .5rem;
-    border: 1px dotted #4cba6d;
+    border: 1px dotted $td-border-color;
     border-radius: 4%;
     background-color: $logo-color;
-    color: aliceblue;
+    color: $figure-p-color;
 }
 
 /*map*/
@@ -306,7 +292,7 @@ input[type="submit"] {
 
     p {
         font-family: $link-font;
-        color: #3f3f3f;
+        color: $text-color;
     }
 
     span {
@@ -343,7 +329,7 @@ input[type="submit"] {
 
                     &:link {
                         text-decoration: none;
-                        color: #444;
+                        color: $a-mobile-link-color;
                         display: inline-block;
                         padding: 0.5rem;
                         background-color: $link-color;
@@ -371,7 +357,7 @@ input[type="submit"] {
                 width: calc(33.33% - 1rem + 0.33rem);
                 float: left;
                 margin: 0 1rem 1rem 0;
-                &::nth-child(3n) {
+                &:nth-child(3n) {
                     margin: 0 0 1rem 0;
                 }
             }
@@ -395,7 +381,7 @@ input[type="submit"] {
         p {
             background: $border-color;
             text-align: center;
-            color: aliceblue;
+            color: $figure-p-color;
         }
     }
     h1 {

@@ -10,5 +10,19 @@
     "gulp": "^3.9.1",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.1"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yin00030/mtm6330-midterem-yin00030.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/yin00030/mtm6330-midterem-yin00030/issues"
+  },
+  "homepage": "https://github.com/yin00030/mtm6330-midterem-yin00030#readme",
+  "description": ""
 }
